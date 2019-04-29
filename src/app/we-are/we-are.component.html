@@ -1,0 +1,14 @@
+<div class="container">
+    
+    <h2 [innerHTML]="weAreData?.pageTitle"></h2>
+  
+    <div class="weare-wrapper" fxLayout="row" fxLayoutGap.gt-sm="2rem">
+      <mat-card *ngFor="let service of weAre">
+        <mat-card-header>
+          <mat-card-title [innerHtml]="service.title.rendered"></mat-card-title>
+        </mat-card-header>
+        <img *ngIf="service?._embedded" mat-card-image src="{{service?._embedded['wp:featuredmedia'][0]?.source_url}}" alt="Photo of a Shiba Inu">
+        <mat-card-content [innerHtml]="service.content.rendered"></mat-card-content>
+      </mat-card>
+    </div>
+  </div>

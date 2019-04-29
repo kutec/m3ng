@@ -1,0 +1,17 @@
+/****************************************
+    =fonts 
+****************************************/
+$font_url: 'https://fonts.googleapis.com/css?family=Open+Sans:400,800';
+$site_font: 'Open Sans', sans-serif;
+
+/****************************************
+    =colors
+****************************************/
+$site_color:  rgba(159, 218, 255, 0.33);
+$link_color: rgba(69, 142, 169, .8);
+$link_color-hover: rgba(69, 142, 169, 1);
+
+$container_width: 1140px;
+$padder: 2rem;
+$padder_max: $padder + 2rem;
+$padder_min: $padder - 1rem;

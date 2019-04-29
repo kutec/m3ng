@@ -1,0 +1,35 @@
+.cf {
+    @include clearfix;
+}
+
+img.animated {
+    -webkit-animation: filter-animation 5s infinite;
+    animation: filter-animation 5s infinite;
+    &:hover{
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+@-webkit-keyframes filter-animation {
+    0% {
+        -webkit-filter: contrast(300%) brightness(100%);
+    }
+    50% {
+        -webkit-filter: contrast(100%) brightness(100%);
+    }
+    100% {
+        -webkit-filter: contrast(300%) brightness(100%);
+    }
+}
+@keyframes filter-animation {
+    0% {
+        filter: contrast(300%) brightness(100%);
+    }
+    50% {
+        filter: contrast(100%) brightness(100%);
+    }
+    100% {
+        filter: contrast(300%) brightness(100%);
+    }
+}

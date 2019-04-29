@@ -1,0 +1,13 @@
+<div class="container">
+  
+  <h2 [innerHTML]="weDoData?.pageTitle"></h2>
+
+  <div class="wedo-wrapper" fxLayout="row" fxLayoutWrap="wrap" fxLayoutGap.gt-sm="2rem">
+    <mat-card *ngFor="let service of weDo">
+      <mat-card-header>
+        <mat-card-title [innerHtml]="service.title.rendered"></mat-card-title>
+      </mat-card-header>
+      <mat-card-content [innerHtml]="service.content.rendered"></mat-card-content>
+    </mat-card>
+  </div>
+</div>

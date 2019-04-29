@@ -1,0 +1,55 @@
+*{
+    -webkit-transition: All .4s ease;
+    -moz-transition: All .4s ease;
+    transition: All .4s ease;
+}
+#header{
+    background: #fff;
+    padding: 0;
+    
+    .menu__trigger{
+        cursor: pointer;
+        margin-left: 1.3rem;
+    }
+    .logo{
+        width: 53px;
+        overflow: hidden;
+        display: inline-block;
+        &:hover{
+            width: 100%;
+        }
+        
+        > img{
+            height: 48px;
+            vertical-align: middle;
+            filter: contrast(300%) brightness(100%);
+           
+            &:hover{
+                filter: contrast(100%) brightness(100%);
+            }
+        }
+    }
+    nav{
+        font-size: 1.4rem;
+    
+        a{
+            display: inline-block;
+            margin: 1.3rem;
+            text-decoration: none;
+        }
+    }
+}
+.next-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 5rem;
+    i{
+        cursor: pointer;
+    }
+}
+.example-sidenav-container {
+   height:100%;
+  }

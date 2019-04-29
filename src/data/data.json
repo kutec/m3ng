@@ -1,0 +1,38 @@
+{
+    "header": {
+        "title": "mQube",
+        "description": "A New Age Media Venture."
+    },
+    "menu": [
+        {        
+            "title": "Home",
+            "url": "/"
+        },
+        {
+            "title": "What We Do",
+            "url": "/do"
+        },
+        {
+            "title": "Who We Are",
+            "url": "/we"
+        },
+        {
+            "title": "Get In Touch",
+            "url": "/get"
+        }
+    ],
+    "pages": [
+        {
+            "wedo":{
+                "pageTitle": "What We Do",
+                "subtitle": "We are providing customized services depend on requirement from the client or comapny."
+            }
+        },
+        {
+            "weare":{
+                "pageTitle": "Who We Are",
+                "subtitle": "We are a team of creative people."
+            }
+        }
+    ]
+}

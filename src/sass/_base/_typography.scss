@@ -1,0 +1,19 @@
+@import url($font_url);
+
+html { 
+    font-size:62.5%;
+    font-family: $site_font;
+}
+body{ font-size: 1.6rem; }
+h1 { font-size: 4rem; margin-top: 0; 
+    small{
+        font-size: (4rem / 1.5);
+        font-weight: 300;
+        &.spacing{
+            letter-spacing: .2rem;
+        }
+    }
+}
+h2 { font-size: 3rem; margin-top: 0; }
+h3 { font-size: 2rem; margin-top: 0; }
+a { color: $link_color; }

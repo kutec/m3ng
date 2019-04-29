@@ -1,0 +1,37 @@
+<app-loader></app-loader>
+
+<div class="page-content">
+    <div class="container">
+        <mat-toolbar id="header" fxLayoutAlign="space-between center"> 
+            <div>
+                <a class="logo" href="" routerLink="/" title="{{ headerData?.header?.title }}"><img class="animated" src="assets/img/logo-h.png"></a>            
+            </div>           
+            <div>
+                <span mat-icon-button class="menu__trigger" fxShow fxHide.gt-sm="true" (click)="snav.toggle()">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <div fxHide.lt-md="true" fxLayoutAlign="end center">
+                    <nav class="menu" [fxLayout]="orientation">
+                        <a fxLayoutAlign="start center" *ngFor="let menuItem of headerData?.menu" [routerLink]="[ menuItem?.url ]">{{ menuItem?.title }}</a>
+                    </nav>
+                </div>            
+            </div>
+        </mat-toolbar>
+    </div>
+
+    <mat-sidenav-container class="example-sidenav-container">
+        <mat-sidenav #snav>
+            <mat-nav-list>
+                <nav class="menu" orientation="column">
+                    <a mat-list-item orientation="column" fxFlexAlign="start" fxLayoutAlign="start center" *ngFor="let menuItem of headerData?.menu" [routerLink]="[ menuItem?.url ]" (click)="snav.toggle()">{{ menuItem?.title }}</a>
+                </nav>
+            
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="height--full">
+             <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,23 @@
+<section class="height--full" id="home">
+  <div class="container">
+      <h1>Welcome to mQube <br><small class="spacing">A New Age Media Venture.</small></h1>
+
+      <span class="next-section" [ngx-scroll-to]="'#wedo'" [ngx-scroll-to-event]="'click'" [ngx-scroll-to-easing]="'easeInCubic'">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </span>
+  </div>
+</section>
+
+<section class="wedo-section" id="wedo">
+    <app-we-do loadOnly="3"></app-we-do>
+    <div class="container" fxLayoutWrap fxLayoutAlign="space-between center">
+    <!-- <h2>Our Services
+        <span [ngx-scroll-to]="'#home'">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+    </h2>
+     -->
+     <a mat-raised-button color="primary" href="" routerLink="/do" fxFlexAlign="center"><i class="material-icons">library_music</i> View All Services</a>
+  </div>
+  
+</section>
